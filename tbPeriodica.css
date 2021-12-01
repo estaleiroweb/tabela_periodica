@@ -1,0 +1,329 @@
+body {
+	font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+}
+
+h1 {
+	text-align: center;
+}
+
+a {
+	color: #3b5998;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.activeCorner {
+	background-color: black;
+	color: white;
+}
+
+a:focus,
+a:active,
+a:hover {
+	text-decoration: underline;
+}
+
+
+#tabela-periodica {
+	border-collapse: collapse;
+	margin: 0.5ex auto 0;
+	clear: both;
+}
+
+
+thead a,
+.elemento {
+	background-color: #DDD;
+	cursor: pointer;
+}
+
+
+label,
+thead a,
+.familia a {
+	color: #04336B;
+}
+
+.elemento,
+.distribuicao {
+	border: thick solid white;
+}
+
+.distribuicao {
+	color: gray;
+	padding-top: 0.2em;
+}
+
+.elemento,
+.distribuicao,
+thead td,
+.familia {
+	border-width: 2px;
+}
+
+thead td {
+	border-right: 1pt solid #CCF;
+}
+
+.elemento a {
+	text-decoration: none;
+	display: block;
+	padding: 0;
+	color: black;
+}
+
+small,
+big {
+	display: -moz-inline-block;
+	display: inline-block;
+	font-size: 100%;
+	text-align: center;
+}
+
+abbr,
+em,
+i {
+	display: block;
+}
+
+.elemento abbr {
+	font-size: 1.1em;
+	font-weight: bold;
+	width: 2.6em;
+}
+
+em,
+.elemento i {
+	font-size: 0.56em;
+	font-style: normal;
+}
+
+em.Long {
+	letter-spacing: -1px;
+}
+
+em,
+.elemento i {
+	width: 5.57em;
+}
+
+em,
+i {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.elemento {
+	padding: 2px 3px 1px 4px;
+	white-space: nowrap;
+}
+
+small {
+	font-size: 0.52em;
+	text-align: right;
+	line-height: 1;
+	width: 1em;
+}
+
+big,
+small,
+.distribuicao {
+	vertical-align: top;
+}
+
+.distribuicao small {
+	width: auto;
+}
+
+.numero-atomico {
+	display: block;
+}
+
+
+
+
+
+/* ---------------------------------------- */
+
+#Informacao {
+	height: 100%;
+	background-color: White;
+	border: 1px solid #000;
+	line-height: 34px;
+}
+
+#Informacao strong {
+	vertical-align: top;
+	font-size: 0.9em;
+	font-weight: normal;
+}
+
+#Informacao abbr {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+#Informacao em {
+	font-size: 1.2em;
+	margin-top: -9px;
+}
+
+#Informacao i {
+	font-size: 0.8em;
+}
+
+#Informacao small {
+	font-size: 0.6em;
+	margin-top: 3px;
+	text-align: center;
+	width: 20px;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	/*
+	writing-mode: horizontal-tb;
+	writing-mode: vertical-lr;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	text-orientation: upright;
+	text-orientation: sideways-right;
+	text-orientation: sideways;
+	text-orientation: use-glyph-orientation;
+	text-orientation: use-glyph-orientation;
+	direction: ltr;
+	direction: rtl;
+	*/
+	;
+}
+
+
+
+
+
+
+
+/* ---------------------------------------- */
+.elemento {
+	width: 60px;
+	height: 60px;
+}
+
+.familia,
+.grupo,
+.periodo {
+	color: #04336B;
+	vertical-align: bottom;
+	font-size: medium;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.periodo {
+	vertical-align: middle;
+}
+
+.familia:hover,
+.grupo:hover,
+.periodo:hover {
+	background-color: #ccc;
+}
+
+
+#legenda > div {
+	width: 700px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	zoom: .8;
+}
+
+#legenda a {
+	font-weight: normal;
+}
+
+#legenda a.tick, #legenda a.descr {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+#legenda a.descr {
+	text-align: left;
+	padding-left: 4px;
+	width: 170px;
+}
+#legenda a.prop {
+	text-align: center;
+	border: 1px solid #000;
+	font-weight: bold;
+}
+
+.legenda {
+	border: 1px solid #000;
+	font-weight: bold;
+}
+
+#legenda .solido,
+.solido abbr {
+	color: Black;
+}
+
+#legenda .liquido,
+.liquido abbr {
+	color: Red;
+}
+
+#legenda .gasoso,
+.gasoso abbr {
+	color: Blue;
+}
+
+#legenda .desconhecido,
+.desconhecido abbr {
+	color: #DDD;
+}
+
+
+.alcalino {
+	background-color: #FA0;
+}
+
+.alcalino-terroso {
+	background-color: #F3F300;
+}
+
+.lantanideo {
+	background-color: #FA8;
+}
+
+.actinideo {
+	background-color: #DAC;
+}
+
+.metal-transicao {
+	background-color: #D99;
+}
+
+.semi-metal {
+	background-color: #5C8;
+}
+
+.metal-representativo {
+	background-color: #9BA;
+}
+
+.nao-metal {
+	background-color: #0E0;
+}
+
+.calcogenio {
+	background-color: rgb(131, 131, 131);
+}
+.halogenio {
+	background-color: #0DB;
+}
+
+.gas-nobre {
+	background-color: #6AF;
+}
