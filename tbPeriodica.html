@@ -1,20 +1,7 @@
 <!DOCTYPE html>
-<html>
-<!--
-	https://www.manualdaquimica.com/quimica-geral/propriedades-periodicas.htm#:~:text=As%20principais%20propriedades%20peri%C3%B3dicas%20qu%C3%ADmicas,ebuli%C3%A7%C3%A3o%2C%20densidade%20e%20volume%20at%C3%B4mico.
-	https://www.manualdaquimica.com/quimica-geral/classificacao-dos-elementos-quimicos-na-tabela-periodica.htm
-	https://www.tabelaperiodicacompleta.com/imprimir-tabela-periodica/#google_vignette
-	https://www.tabelaperiodicacompleta.com/
-	https://www.todamateria.com.br/tabela-periodica/
--->
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Tabela Periódica</title>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-		integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
-		integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" media="all" href="tbPeriodica.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="tbPeriodica.js"></script>
@@ -22,249 +9,221 @@
 
 <body>
 	<h1>Tabela Periódica</h1>
-	<div align="center">
-		<table id="tabela-periodica" border="0" cellspacing="0">
-			<thead>
-				<tr class="grupos">
-					<td></td>
-					<td class="grupo"></td>
-					<td class="grupo"></td>
-					<td class="grupo"></td>
-					<td class="grupo"></td>
-					<td class="grupo"></td>
-					<td class="grupo"></td>
-					<td class="grupo"></td>
-					<td class="grupo"></td>
-					<td class="grupo"></td>
-					<td class="grupo"></td>
-					<td class="grupo"></td>
-					<td class="grupo"></td>
-					<td class="grupo"></td>
-					<td class="grupo"></td>
-					<td class="grupo"></td>
-					<td class="grupo"></td>
-					<td class="grupo"></td>
-					<td class="grupo"></td>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<th width=20></th>
-					<td class="familia" group="1"></td>
-					<td></td>
-					<td colspan="10" rowspan="3" id="legenda" align="center"></td>
-					<td colspan="5"></td>
-					<td class="familia" group="18"></td>
-					<td width=20></td>
-				</tr>
-				<tr>
-					<th class="periodo"></th>
-					<td class="elemento" an="1"></td>
-					<td class="familia" group="2"></td>
-					<td class="familia" group="13"></td>
-					<td class="familia" group="14"></td>
-					<td class="familia" group="15"></td>
-					<td class="familia" group="16"></td>
-					<td class="familia" group="17"></td>
-					<td class="elemento" an="2"></td>
-					<td class="distribuicao">
-						<small>K</small>
-					</td>
-				</tr>
-				<tr>
-					<th class="periodo"></th>
-					<td class="elemento" an="3"></td>
-					<td class="elemento" an="4"></td>
-					<td class="elemento" an="5"></td>
-					<td class="elemento" an="6"></td>
-					<td class="elemento" an="7"></td>
-					<td class="elemento" an="8"></td>
-					<td class="elemento" an="9"></td>
-					<td class="elemento" an="10"></td>
-					<td class="distribuicao">
-						<small>K<br>L</small>
-					</td>
-				</tr>
-				<tr>
-					<th class="periodo"></th>
-					<td class="elemento" an="11"></td>
-					<td class="elemento" an="12"></td>
-					<td class="familia" group="3"></td>
-					<td class="familia" group="4"></td>
-					<td class="familia" group="5"></td>
-					<td class="familia" group="6"></td>
-					<td class="familia" group="7"></td>
-					<td class="familia" group="8"></td>
-					<td class="familia" group="9"></td>
-					<td class="familia" group="10"></td>
-					<td class="familia" group="11"></td>
-					<td class="familia" group="12"></td>
-					<td class="elemento" an="13"></td>
-					<td class="elemento" an="14"></td>
-					<td class="elemento" an="15"></td>
-					<td class="elemento" an="16"></td>
-					<td class="elemento" an="17"></td>
-					<td class="elemento" an="18"></td>
-					<td class="distribuicao">
-						<small>K<br>L<br>M</small>
-					</td>
-				</tr>
-				<tr>
-					<th class="periodo"></th>
-					<td class="elemento" an="19"></td>
-					<td class="elemento" an="20"></td>
-					<td class="elemento" an="21"></td>
-					<td class="elemento" an="22"></td>
-					<td class="elemento" an="23"></td>
-					<td class="elemento" an="24"></td>
-					<td class="elemento" an="25"></td>
-					<td class="elemento" an="26"></td>
-					<td class="elemento" an="27"></td>
-					<td class="elemento" an="28"></td>
-					<td class="elemento" an="29"></td>
-					<td class="elemento" an="30"></td>
-					<td class="elemento" an="31"></td>
-					<td class="elemento" an="32"></td>
-					<td class="elemento" an="33"></td>
-					<td class="elemento" an="34"></td>
-					<td class="elemento" an="35"></td>
-					<td class="elemento" an="36"></td>
-					<td class="distribuicao">
-						<small>K<br>L<br>M<br>N</small>
-					</td>
-				</tr>
-				<tr>
-					<th class="periodo"></th>
-					<td class="elemento" an="37"></td>
-					<td class="elemento" an="38"></td>
-					<td class="elemento" an="39"></td>
-					<td class="elemento" an="40"></td>
-					<td class="elemento" an="41"></td>
-					<td class="elemento" an="42"></td>
-					<td class="elemento" an="43"></td>
-					<td class="elemento" an="44"></td>
-					<td class="elemento" an="45"></td>
-					<td class="elemento" an="46"></td>
-					<td class="elemento" an="47"></td>
-					<td class="elemento" an="48"></td>
-					<td class="elemento" an="49"></td>
-					<td class="elemento" an="50"></td>
-					<td class="elemento" an="51"></td>
-					<td class="elemento" an="52"></td>
-					<td class="elemento" an="53"></td>
-					<td class="elemento" an="54"></td>
-					<td class="distribuicao">
-						<small>K<br>L<br>M<br>N<br>O</small>
-					</td>
-				</tr>
-				<tr>
-					<th class="periodo"></th>
-					<td class="elemento" an="55"></td>
-					<td class="elemento" an="56"></td>
-					<td class="elemento" an="57-71"></td>
-					<td class="elemento" an="72"></td>
-					<td class="elemento" an="73"></td>
-					<td class="elemento" an="74"></td>
-					<td class="elemento" an="75"></td>
-					<td class="elemento" an="76"></td>
-					<td class="elemento" an="77"></td>
-					<td class="elemento" an="78"></td>
-					<td class="elemento" an="79"></td>
-					<td class="elemento" an="80"></td>
-					<td class="elemento" an="81"></td>
-					<td class="elemento" an="82"></td>
-					<td class="elemento" an="83"></td>
-					<td class="elemento" an="84"></td>
-					<td class="elemento" an="85"></td>
-					<td class="elemento" an="86"></td>
-					<td class="distribuicao">
-						<small>K<br>L<br>M<br>N<br>O<br>P</small>
-					</td>
-				</tr>
-				<tr>
-					<th class="periodo"></th>
-					<td class="elemento" an="87"></td>
-					<td class="elemento" an="88"></td>
-					<td class="elemento" an="89-103"></td>
-					<td class="elemento" an="104"></td>
-					<td class="elemento" an="105"></td>
-					<td class="elemento" an="106"></td>
-					<td class="elemento" an="107"></td>
-					<td class="elemento" an="108"></td>
-					<td class="elemento" an="109"></td>
-					<td class="elemento" an="110"></td>
-					<td class="elemento" an="111"></td>
-					<td class="elemento" an="112"></td>
-					<td class="elemento" an="113"></td>
-					<td class="elemento" an="114"></td>
-					<td class="elemento" an="115"></td>
-					<td class="elemento" an="116"></td>
-					<td class="elemento" an="117"></td>
-					<td class="elemento" an="118"></td>
-					<td class="distribuicao">
-						<small>K<br>L<br>M<br>N<br>O<br>P<br>Q</small>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="20" style="height:10px;">
-					</td>
-				</tr>
-				<tr>
-					<td></td>
-					<td colspan="2" rowspan="2" id="Informacao">
-						<big>
-							<strong an="4">Nº Atômico</strong>
-							<abbr>Simbolo</abbr>
-							<em>Nome</em>
-							<i>Massa Atômica</i>
-						</big>
-						<small>DISTRIBUIÇÃO</small>
-					</td>
-					<td style="text-align:right;">*</td>
-					<td class="elemento" an="57"></td>
-					<td class="elemento" an="58"></td>
-					<td class="elemento" an="59"></td>
-					<td class="elemento" an="60"></td>
-					<td class="elemento" an="61"></td>
-					<td class="elemento" an="62"></td>
-					<td class="elemento" an="63"></td>
-					<td class="elemento" an="64"></td>
-					<td class="elemento" an="65"></td>
-					<td class="elemento" an="66"></td>
-					<td class="elemento" an="67"></td>
-					<td class="elemento" an="68"></td>
-					<td class="elemento" an="69"></td>
-					<td class="elemento" an="70"></td>
-					<td class="elemento" an="71"></td>
-					<td class="distribuicao">
-						<small>K<br>L<br>M<br>N<br>O<br>P</small>
-					</td>
-				</tr>
-				<tr>
-					<td></td>
-					<td style="text-align:right;">**</td>
-					<td class="elemento" an="89"></td>
-					<td class="elemento" an="90"></td>
-					<td class="elemento" an="91"></td>
-					<td class="elemento" an="92"></td>
-					<td class="elemento" an="93"></td>
-					<td class="elemento" an="94"></td>
-					<td class="elemento" an="95"></td>
-					<td class="elemento" an="96"></td>
-					<td class="elemento" an="97"></td>
-					<td class="elemento" an="98"></td>
-					<td class="elemento" an="99"></td>
-					<td class="elemento" an="100"></td>
-					<td class="elemento" an="101"></td>
-					<td class="elemento" an="102"></td>
-					<td class="elemento" an="103"></td>
-					<td class="distribuicao">
-						<small>K<br>L<br>M<br>N<br>O<br>P<br>Q</small>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
+	<table id="tabela-periodica">
+		<thead>
+			<tr>
+				<td></td>
+				<td class="group"></td>
+				<td class="group"></td>
+				<td class="group"></td>
+				<td class="group"></td>
+				<td class="group"></td>
+				<td class="group"></td>
+				<td class="group"></td>
+				<td class="group"></td>
+				<td class="group"></td>
+				<td class="group"></td>
+				<td class="group"></td>
+				<td class="group"></td>
+				<td class="group"></td>
+				<td class="group"></td>
+				<td class="group"></td>
+				<td class="group"></td>
+				<td class="group"></td>
+				<td class="group"></td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th width=20></th>
+				<td class="family" group="1"></td>
+				<td></td>
+				<td colspan="10" rowspan="3" class="info"></td>
+				<td colspan="5"></td>
+				<td class="family" group="18"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th class="period"></th>
+				<td class="element" an="1"></td>
+				<td class="family" group="2"></td>
+				<td class="family" group="13"></td>
+				<td class="family" group="14"></td>
+				<td class="family" group="15"></td>
+				<td class="family" group="16"></td>
+				<td class="family" group="17"></td>
+				<td class="element" an="2"></td>
+				<td class="klmnopq-descr"></td>
+			</tr>
+			<tr>
+				<th class="period"></th>
+				<td class="element" an="3"></td>
+				<td class="element" an="4"></td>
+				<td class="element" an="5"></td>
+				<td class="element" an="6"></td>
+				<td class="element" an="7"></td>
+				<td class="element" an="8"></td>
+				<td class="element" an="9"></td>
+				<td class="element" an="10"></td>
+				<td class="klmnopq-descr"></td>
+			</tr>
+			<tr>
+				<th class="period"></th>
+				<td class="element" an="11"></td>
+				<td class="element" an="12"></td>
+				<td class="family" group="3"></td>
+				<td class="family" group="4"></td>
+				<td class="family" group="5"></td>
+				<td class="family" group="6"></td>
+				<td class="family" group="7"></td>
+				<td class="family" group="8"></td>
+				<td class="family" group="9"></td>
+				<td class="family" group="10"></td>
+				<td class="family" group="11"></td>
+				<td class="family" group="12"></td>
+				<td class="element" an="13"></td>
+				<td class="element" an="14"></td>
+				<td class="element" an="15"></td>
+				<td class="element" an="16"></td>
+				<td class="element" an="17"></td>
+				<td class="element" an="18"></td>
+				<td class="klmnopq-descr"></td>
+			</tr>
+			<tr>
+				<th class="period"></th>
+				<td class="element" an="19"></td>
+				<td class="element" an="20"></td>
+				<td class="element" an="21"></td>
+				<td class="element" an="22"></td>
+				<td class="element" an="23"></td>
+				<td class="element" an="24"></td>
+				<td class="element" an="25"></td>
+				<td class="element" an="26"></td>
+				<td class="element" an="27"></td>
+				<td class="element" an="28"></td>
+				<td class="element" an="29"></td>
+				<td class="element" an="30"></td>
+				<td class="element" an="31"></td>
+				<td class="element" an="32"></td>
+				<td class="element" an="33"></td>
+				<td class="element" an="34"></td>
+				<td class="element" an="35"></td>
+				<td class="element" an="36"></td>
+				<td class="klmnopq-descr"></td>
+			</tr>
+			<tr>
+				<th class="period"></th>
+				<td class="element" an="37"></td>
+				<td class="element" an="38"></td>
+				<td class="element" an="39"></td>
+				<td class="element" an="40"></td>
+				<td class="element" an="41"></td>
+				<td class="element" an="42"></td>
+				<td class="element" an="43"></td>
+				<td class="element" an="44"></td>
+				<td class="element" an="45"></td>
+				<td class="element" an="46"></td>
+				<td class="element" an="47"></td>
+				<td class="element" an="48"></td>
+				<td class="element" an="49"></td>
+				<td class="element" an="50"></td>
+				<td class="element" an="51"></td>
+				<td class="element" an="52"></td>
+				<td class="element" an="53"></td>
+				<td class="element" an="54"></td>
+				<td class="klmnopq-descr"></td>
+			</tr>
+			<tr>
+				<th class="period"></th>
+				<td class="element" an="55"></td>
+				<td class="element" an="56"></td>
+				<td class="element" an="57-71"></td>
+				<td class="element" an="72"></td>
+				<td class="element" an="73"></td>
+				<td class="element" an="74"></td>
+				<td class="element" an="75"></td>
+				<td class="element" an="76"></td>
+				<td class="element" an="77"></td>
+				<td class="element" an="78"></td>
+				<td class="element" an="79"></td>
+				<td class="element" an="80"></td>
+				<td class="element" an="81"></td>
+				<td class="element" an="82"></td>
+				<td class="element" an="83"></td>
+				<td class="element" an="84"></td>
+				<td class="element" an="85"></td>
+				<td class="element" an="86"></td>
+				<td class="klmnopq-descr"></td>
+			</tr>
+			<tr>
+				<th class="period"></th>
+				<td class="element" an="87"></td>
+				<td class="element" an="88"></td>
+				<td class="element" an="89-103"></td>
+				<td class="element" an="104"></td>
+				<td class="element" an="105"></td>
+				<td class="element" an="106"></td>
+				<td class="element" an="107"></td>
+				<td class="element" an="108"></td>
+				<td class="element" an="109"></td>
+				<td class="element" an="110"></td>
+				<td class="element" an="111"></td>
+				<td class="element" an="112"></td>
+				<td class="element" an="113"></td>
+				<td class="element" an="114"></td>
+				<td class="element" an="115"></td>
+				<td class="element" an="116"></td>
+				<td class="element" an="117"></td>
+				<td class="element" an="118"></td>
+				<td class="klmnopq-descr"></td>
+			</tr>
+			<tr>
+				<td colspan="20" style="height:10px;">
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="2" rowspan="2" class="example"></td>
+				<td style="text-align:right;">*</td>
+				<td class="element" an="57"></td>
+				<td class="element" an="58"></td>
+				<td class="element" an="59"></td>
+				<td class="element" an="60"></td>
+				<td class="element" an="61"></td>
+				<td class="element" an="62"></td>
+				<td class="element" an="63"></td>
+				<td class="element" an="64"></td>
+				<td class="element" an="65"></td>
+				<td class="element" an="66"></td>
+				<td class="element" an="67"></td>
+				<td class="element" an="68"></td>
+				<td class="element" an="69"></td>
+				<td class="element" an="70"></td>
+				<td class="element" an="71"></td>
+				<td class="klmnopq-descr"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td style="text-align:right;">**</td>
+				<td class="element" an="89"></td>
+				<td class="element" an="90"></td>
+				<td class="element" an="91"></td>
+				<td class="element" an="92"></td>
+				<td class="element" an="93"></td>
+				<td class="element" an="94"></td>
+				<td class="element" an="95"></td>
+				<td class="element" an="96"></td>
+				<td class="element" an="97"></td>
+				<td class="element" an="98"></td>
+				<td class="element" an="99"></td>
+				<td class="element" an="100"></td>
+				<td class="element" an="101"></td>
+				<td class="element" an="102"></td>
+				<td class="element" an="103"></td>
+				<td class="klmnopq-descr"></td>
+			</tr>
+		</tbody>
+	</table>
 </body>
 
 </html>

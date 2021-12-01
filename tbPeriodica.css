@@ -13,204 +13,153 @@ a {
 	font-weight: bold;
 }
 
-.activeCorner {
-	background-color: black;
-	color: white;
-}
-
-a:focus,
-a:active,
 a:hover {
 	text-decoration: underline;
 }
 
+td {
+	border: 2px solid white;
+}
 
 #tabela-periodica {
 	border-collapse: collapse;
-	margin: 0.5ex auto 0;
+	margin: 0 auto 0;
 	clear: both;
 }
 
 
-thead a,
-.elemento {
-	background-color: #DDD;
+.element,
+.example {
+	white-space: nowrap;
+	vertical-align: top;
+	text-align: center;
+	background-color: White;
+}
+
+.element {
+	width: 60px;
+	height: 60px;
 	cursor: pointer;
 }
 
-
-label,
-thead a,
-.familia a {
-	color: #04336B;
-}
-
-.elemento,
-.distribuicao {
-	border: thick solid white;
-}
-
-.distribuicao {
-	color: gray;
-	padding-top: 0.2em;
-}
-
-.elemento,
-.distribuicao,
-thead td,
-.familia {
-	border-width: 2px;
-}
-
-thead td {
-	border-right: 1pt solid #CCF;
-}
-
-.elemento a {
-	text-decoration: none;
-	display: block;
-	padding: 0;
-	color: black;
-}
-
-small,
-big {
-	display: -moz-inline-block;
-	display: inline-block;
-	font-size: 100%;
-	text-align: center;
-}
-
-abbr,
-em,
-i {
-	display: block;
-}
-
-.elemento abbr {
-	font-size: 1.1em;
-	font-weight: bold;
-	width: 2.6em;
-}
-
-em,
-.elemento i {
-	font-size: 0.56em;
-	font-style: normal;
-}
-
-em.Long {
-	letter-spacing: -1px;
-}
-
-em,
-.elemento i {
-	width: 5.57em;
-}
-
-em,
-i {
+.element>div:nth-child(1) {
+	width: inherit;
+	height: inherit;
 	overflow: hidden;
-	text-overflow: ellipsis;
+	position: absolute;
+	padding: 2px 2px 2px 2px;
 }
 
-.elemento {
-	padding: 2px 3px 1px 4px;
-	white-space: nowrap;
+.element.compact {
+	font-stretch: condensed;
 }
 
-small {
-	font-size: 0.52em;
-	text-align: right;
-	line-height: 1;
-	width: 1em;
+.element .an,
+.element .symbol,
+.element .name,
+.element .mass,
+.element .ec {
+	width: 50px;
 }
 
-big,
-small,
-.distribuicao {
-	vertical-align: top;
-}
-
-.distribuicao small {
-	width: auto;
-}
-
-.numero-atomico {
-	display: block;
-}
-
-
-
-
-
-/* ---------------------------------------- */
-
-#Informacao {
-	height: 100%;
-	background-color: White;
-	border: 1px solid #000;
-	line-height: 34px;
-}
-
-#Informacao strong {
-	vertical-align: top;
-	font-size: 0.9em;
-	font-weight: normal;
-}
-
-#Informacao abbr {
-	font-size: 1.2em;
+.an {
+	text-align: left;
 	font-weight: bold;
+	color: #555;
+	font-size: .9em;
 }
 
-#Informacao em {
-	font-size: 1.2em;
-	margin-top: -9px;
+.symbol {
+	font-weight: bold;
+	position: relative;
+	font-size: 1.5em;
+	top: -7px;
 }
 
-#Informacao i {
-	font-size: 0.8em;
+.name,
+.mass,
+.ec {
+	font-size: .5em;
+	position: relative;
+	top: -11px;
 }
 
-#Informacao small {
-	font-size: 0.6em;
-	margin-top: 3px;
-	text-align: center;
+.name {
+	font-weight: bold;
+	font-stretch: condensed;
+}
+
+.ec {
+	font-size: .4em;
+}
+
+.klmnopq,
+.klmnopq-descr {
+	font-size: .5em;
+	line-height: 1;
+	vertical-align: top;
+	padding-top: 3px;
+}
+
+.klmnopq {
+	float: right;
+	padding-right: 3px;
+	text-align: right;
+	color: white;
+}
+
+.klmnopq-descr {
 	width: 20px;
-	writing-mode: vertical-rl;
-	text-orientation: mixed;
-	/*
-	writing-mode: horizontal-tb;
-	writing-mode: vertical-lr;
-	writing-mode: vertical-rl;
-	text-orientation: mixed;
-	text-orientation: upright;
-	text-orientation: sideways-right;
-	text-orientation: sideways;
-	text-orientation: use-glyph-orientation;
-	text-orientation: use-glyph-orientation;
-	direction: ltr;
-	direction: rtl;
-	*/
-	;
+	text-align: left;
+	border-left: none;
+	color: gray;
 }
 
-
-
-
-
-
-
-/* ---------------------------------------- */
-.elemento {
-	width: 60px;
-	height: 60px;
+.example {
+	border: none;
 }
 
-.familia,
-.grupo,
-.periodo {
+.example>div:nth-child(1) {
+	width: 120px;
+	height: 120px;
+	border: 2px solid black;
+	position: absolute;
+	padding: 2px 2px 2px 2px;
+}
+
+.example .an,
+.example .symbol,
+.example .name,
+.example .mass,
+.example .ec {
+	width: 100px;
+}
+
+.example .symbol {
+	font-size: 1.6em;
+	top: 18px;
+}
+
+.example .name,
+.example .mass,
+.example .ec {
+	font-size: .8em;
+	top: 20px;
+}
+
+.example .klmnopq {
+	font-size: .8em;
+	color: gray;
+	padding-top: 4px;
+}
+
+.family {
+	vertical-align: bottom;
+}
+
+.family div,
+.group,
+.period {
 	color: #04336B;
 	vertical-align: bottom;
 	font-size: medium;
@@ -219,68 +168,124 @@ small,
 	cursor: pointer;
 }
 
-.periodo {
+.period {
 	vertical-align: middle;
 }
 
-.familia:hover,
-.grupo:hover,
-.periodo:hover {
+.family div:hover,
+.group:hover,
+.period:hover {
 	background-color: #ccc;
 }
 
-
-#legenda > div {
-	width: 700px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	border: 1px solid #000;
-	border-radius: 5px;
-	zoom: .8;
+.active {
+	background-color: black;
+	color: white !important;
 }
 
-#legenda a {
+.info {
+	vertical-align: top;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+	align-content: center;
+}
+
+.info>div {
+	width: 600px;
+	height: 140px;
+	position: absolute;
+	vertical-align: middle;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 5px;
+	border: 2px solid black;
+}
+
+.details {
+	z-index: 10;
+}
+.details th {
+	text-align: left;
+	width: 120px;
+}
+.details td {
+	border: none;
+	text-align: left;
+	background-color: rgba(255, 255, 255, .6);
+	width: auto;
+}
+.details tr td:nth-child(2) {
+	width: 100px;
+}
+.details tr th:nth-child(3) {
+	width: 90px;
+}
+.details tr td:nth-child(4) {
+	width: 250px;
+}
+.subtitle {
+	z-index: 5;
+}
+.subtitle table{
+	border-collapse: collapse;
+	margin: 0 auto 0;
+	clear: both;
+}
+.subtitle table td {
+	padding: 0;
+}
+.subtitle>div{
+	width: 33.33333333%;
+	float: left;
+	position: relative;
+    padding-right: 4px;
+    padding-left: 4px;
+	box-sizing: border-box;
+	display: block;
+}
+.subtitle a {
 	font-weight: normal;
 }
 
-#legenda a.tick, #legenda a.descr {
+.subtitle a.tick,
+.subtitle a.descr {
 	display: inline-block;
 	width: 20px;
 	height: 20px;
 }
-#legenda a.descr {
+
+.subtitle a.descr {
 	text-align: left;
 	padding-left: 4px;
-	width: 170px;
+	vertical-align: middle;
+	font-size: .8em;
+	width: 150px;
 }
-#legenda a.prop {
+
+.subtitle a.prop {
 	text-align: center;
 	border: 1px solid #000;
 	font-weight: bold;
 }
 
-.legenda {
-	border: 1px solid #000;
-	font-weight: bold;
-}
-
-#legenda .solido,
-.solido abbr {
+.subtitle .solido,
+.solido .symbol {
 	color: Black;
 }
 
-#legenda .liquido,
-.liquido abbr {
+.subtitle .liquido,
+.liquido .symbol {
 	color: Red;
 }
 
-#legenda .gasoso,
-.gasoso abbr {
+.subtitle .gasoso,
+.gasoso .symbol {
 	color: Blue;
 }
 
-#legenda .desconhecido,
-.desconhecido abbr {
+.subtitle .desconhecido,
+.desconhecido .symbol {
 	color: #DDD;
 }
 
@@ -290,7 +295,7 @@ small,
 }
 
 .alcalino-terroso {
-	background-color: #F3F300;
+	background-color: #aaaa00;
 }
 
 .lantanideo {
@@ -320,6 +325,7 @@ small,
 .calcogenio {
 	background-color: rgb(131, 131, 131);
 }
+
 .halogenio {
 	background-color: #0DB;
 }

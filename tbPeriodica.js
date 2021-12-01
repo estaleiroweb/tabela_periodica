@@ -1,5 +1,6 @@
 $(document).ready(function () {
 	//⁰¹²³⁴⁵⁶⁷⁸⁹
+	var klmnopq = ['K', 'L', 'M', 'N', 'O', 'P', 'Q'];
 	var cl = {
 		"alcalino": {
 			"link": "https://www.tabelaperiodicacompleta.com/metais-alcalinos",
@@ -174,7 +175,7 @@ $(document).ready(function () {
 			"symbol": "H",
 			"name": "Hidrogênio",
 			"distr": [1],
-			"ec": "1s¹"
+			"ec": ["1s¹"]
 		},
 		"2": {
 			"class": "gas-nobre",
@@ -186,7 +187,7 @@ $(document).ready(function () {
 			"symbol": "He",
 			"name": "Hélio",
 			"distr": [2],
-			"ec": "1s²"
+			"ec": ["1s²"]
 		},
 		"3": {
 			"class": "alcalino",
@@ -198,7 +199,7 @@ $(document).ready(function () {
 			"symbol": "Li",
 			"name": "Lítio",
 			"distr": [2, 1],
-			"ec": "1s² 2s¹"
+			"ec": ["1s²", "2s¹"]
 		},
 		"4": {
 			"class": "alcalino-terroso",
@@ -210,7 +211,7 @@ $(document).ready(function () {
 			"symbol": "Be",
 			"name": "Berílio",
 			"distr": [2, 2],
-			"ec": "1s² 2s²"
+			"ec": ["1s²", "2s²"]
 		},
 		"5": {
 			"class": "semi-metal",
@@ -222,7 +223,7 @@ $(document).ready(function () {
 			"symbol": "B",
 			"name": "Boro",
 			"distr": [2, 3],
-			"ec": "1s² 2s² 2p¹"
+			"ec": ["1s²", "2s²", "2p¹"]
 		},
 		"6": {
 			"class": "nao-metal",
@@ -234,7 +235,7 @@ $(document).ready(function () {
 			"symbol": "C",
 			"name": "Carbono",
 			"distr": [2, 4],
-			"ec": "1s² 2s² 2p²"
+			"ec": ["1s²", "2s²", "2p²"]
 		},
 		"7": {
 			"class": "nao-metal",
@@ -246,7 +247,7 @@ $(document).ready(function () {
 			"symbol": "N",
 			"name": "Nitrogênio",
 			"distr": [2, 5],
-			"ec": "1s² 2s² 2p³"
+			"ec": ["1s²", "2s²", "2p³"]
 		},
 		"8": {
 			"class": "nao-metal",
@@ -258,7 +259,7 @@ $(document).ready(function () {
 			"symbol": "O",
 			"name": "Oxigênio",
 			"distr": [2, 6],
-			"ec": "1s² 2s² 2p⁴"
+			"ec": ["1s²", "2s²", "2p⁴"]
 		},
 		"9": {
 			"class": "halogenio",
@@ -270,7 +271,7 @@ $(document).ready(function () {
 			"symbol": "F",
 			"name": "Flúor",
 			"distr": [2, 7],
-			"ec": "1s² 2s² 2p⁵"
+			"ec": ["1s²", "2s²", "2p⁵"]
 		},
 		"10": {
 			"class": "gas-nobre",
@@ -282,7 +283,7 @@ $(document).ready(function () {
 			"symbol": "Ne",
 			"name": "Neônio",
 			"distr": [2, 8],
-			"ec": "1s² 2s² 2p⁶"
+			"ec": ["1s²", "2s²", "2p⁶"]
 		},
 		"11": {
 			"class": "alcalino",
@@ -294,7 +295,7 @@ $(document).ready(function () {
 			"symbol": "Na",
 			"name": "Sódio",
 			"distr": [2, 8, 1],
-			"ec": "[Ne] 3s¹"
+			"ec": ["[Ne]", "3s¹"]
 		},
 		"12": {
 			"class": "alcalino-terroso",
@@ -306,7 +307,7 @@ $(document).ready(function () {
 			"symbol": "Mg",
 			"name": "Magnésio",
 			"distr": [2, 8, 2],
-			"ec": "[Ne] 3s²"
+			"ec": ["[Ne]", "3s²"]
 		},
 		"13": {
 			"class": "metal-representativo",
@@ -318,7 +319,7 @@ $(document).ready(function () {
 			"symbol": "Al",
 			"name": "Alumínio",
 			"distr": [2, 8, 3],
-			"ec": "[Ne] 3s² 3p¹"
+			"ec": ["[Ne]", "3s²", "3p¹"]
 		},
 		"14": {
 			"class": "semi-metal",
@@ -330,7 +331,7 @@ $(document).ready(function () {
 			"symbol": "Si",
 			"name": "Silício",
 			"distr": [2, 8, 4],
-			"ec": "[Ne] 3s² 3p²"
+			"ec": ["[Ne]", "3s²", "3p²"]
 		},
 		"15": {
 			"class": "nao-metal",
@@ -342,7 +343,7 @@ $(document).ready(function () {
 			"symbol": "P",
 			"name": "Fósforo",
 			"distr": [2, 8, 5],
-			"ec": "[Ne] 3s² 3p³"
+			"ec": ["[Ne]", "3s²", "3p³"]
 		},
 		"16": {
 			"class": "nao-metal",
@@ -354,7 +355,7 @@ $(document).ready(function () {
 			"symbol": "S",
 			"name": "Enxofre",
 			"distr": [2, 8, 6],
-			"ec": "[Ne] 3s² 3p⁴"
+			"ec": ["[Ne]", "3s²", "3p⁴"]
 		},
 		"17": {
 			"class": "halogenio",
@@ -366,7 +367,7 @@ $(document).ready(function () {
 			"symbol": "Cl",
 			"name": "Cloro",
 			"distr": [2, 8, 7],
-			"ec": "[Ne] 3s² 3p⁵"
+			"ec": ["[Ne]", "3s²", "3p⁵"]
 		},
 		"18": {
 			"class": "gas-nobre",
@@ -378,7 +379,7 @@ $(document).ready(function () {
 			"symbol": "Ar",
 			"name": "Argônio",
 			"distr": [2, 8, 8],
-			"ec": "[Ne] 3s² 3p⁶"
+			"ec": ["[Ne]", "3s²", "3p⁶"]
 		},
 		"19": {
 			"class": "alcalino",
@@ -390,7 +391,7 @@ $(document).ready(function () {
 			"symbol": "K",
 			"name": "Potássio",
 			"distr": [2, 8, 8, 1],
-			"ec": "[Ar] 4s¹"
+			"ec": ["[Ar]", "4s¹"]
 		},
 		"20": {
 			"class": "alcalino-terroso",
@@ -402,7 +403,7 @@ $(document).ready(function () {
 			"symbol": "Ca",
 			"name": "Cálcio",
 			"distr": [2, 8, 8, 2],
-			"ec": "[Ar] 4s²"
+			"ec": ["[Ar]", "4s²"]
 		},
 		"21": {
 			"class": "metal-transicao",
@@ -414,7 +415,7 @@ $(document).ready(function () {
 			"symbol": "Sc",
 			"name": "Escândio",
 			"distr": [2, 8, 9, 2],
-			"ec": "[Ar] 3d¹ 4s²"
+			"ec": ["[Ar]", "3d¹", "4s²"]
 		},
 		"22": {
 			"class": "metal-transicao",
@@ -426,7 +427,7 @@ $(document).ready(function () {
 			"symbol": "Ti",
 			"name": "Titânio",
 			"distr": [2, 8, 10, 2],
-			"ec": "[Ar] 3d² 4s²"
+			"ec": ["[Ar]", "3d²", "4s²"]
 		},
 		"23": {
 			"class": "metal-transicao",
@@ -438,7 +439,7 @@ $(document).ready(function () {
 			"symbol": "V",
 			"name": "Vanádio",
 			"distr": [2, 8, 11, 2],
-			"ec": "[Ar] 3d³ 4s²"
+			"ec": ["[Ar]", "3d³", "4s²"]
 		},
 		"24": {
 			"class": "metal-transicao",
@@ -450,7 +451,7 @@ $(document).ready(function () {
 			"symbol": "Cr",
 			"name": "Cromo",
 			"distr": [2, 8, 13, 1],
-			"ec": "[Ar] 3d⁴ 4s²"
+			"ec": ["[Ar]", "3d⁴", "4s²"]
 		},
 		"25": {
 			"class": "metal-transicao",
@@ -462,7 +463,7 @@ $(document).ready(function () {
 			"symbol": "Mn",
 			"name": "Manganês",
 			"distr": [2, 8, 13, 2],
-			"ec": "[Ar] 3d⁵ 4s²"
+			"ec": ["[Ar]", "3d⁵", "4s²"]
 		},
 		"26": {
 			"class": "metal-transicao",
@@ -474,7 +475,7 @@ $(document).ready(function () {
 			"symbol": "Fe",
 			"name": "Ferro",
 			"distr": [2, 8, 14, 2],
-			"ec": "[Ar] 3d⁶ 4s²"
+			"ec": ["[Ar]", "3d⁶", "4s²"]
 		},
 		"27": {
 			"class": "metal-transicao",
@@ -486,7 +487,7 @@ $(document).ready(function () {
 			"symbol": "Co",
 			"name": "Cobalto",
 			"distr": [2, 8, 15, 2],
-			"ec": "[Ar] 3d⁷ 4s²"
+			"ec": ["[Ar]", "3d⁷", "4s²"]
 		},
 		"28": {
 			"class": "metal-transicao",
@@ -498,7 +499,7 @@ $(document).ready(function () {
 			"symbol": "Ni",
 			"name": "Níquel",
 			"distr": [2, 8, 16, 2],
-			"ec": "[Ar] 3d⁸ 4s²"
+			"ec": ["[Ar]", "3d⁸", "4s²"]
 		},
 		"29": {
 			"class": "metal-transicao",
@@ -510,7 +511,7 @@ $(document).ready(function () {
 			"symbol": "Cu",
 			"name": "Cobre",
 			"distr": [2, 8, 18, 1],
-			"ec": "[Ar] 3d¹⁰ 4s¹"
+			"ec": ["[Ar]", "3d¹⁰", "4s¹"]
 		},
 		"30": {
 			"class": "metal-transicao",
@@ -522,7 +523,7 @@ $(document).ready(function () {
 			"symbol": "Zn",
 			"name": "Zinco",
 			"distr": [2, 8, 18, 2],
-			"ec": "[Ar] 3d¹⁰ 4s²"
+			"ec": ["[Ar]", "3d¹⁰", "4s²"]
 		},
 		"31": {
 			"class": "metal-representativo",
@@ -534,7 +535,7 @@ $(document).ready(function () {
 			"symbol": "Ga",
 			"name": "Gálio",
 			"distr": [2, 8, 18, 3],
-			"ec": "[Ar] 3d¹⁰ 4s² 4p¹"
+			"ec": ["[Ar]", "3d¹⁰", "4s²", "4p¹"]
 		},
 		"32": {
 			"class": "semi-metal",
@@ -546,7 +547,7 @@ $(document).ready(function () {
 			"symbol": "Ge",
 			"name": "Germânio",
 			"distr": [2, 8, 18, 4],
-			"ec": "[Ar] 3d¹⁰ 4s² 4p²"
+			"ec": ["[Ar]", "3d¹⁰", "4s²", "4p²"]
 		},
 		"33": {
 			"class": "semi-metal",
@@ -558,7 +559,7 @@ $(document).ready(function () {
 			"symbol": "As",
 			"name": "Arsênio",
 			"distr": [2, 8, 18, 5],
-			"ec": "[Ar] 3d¹⁰ 4s² 4p³"
+			"ec": ["[Ar]", "3d¹⁰", "4s²", "4p³"]
 		},
 		"34": {
 			"class": "nao-metal",
@@ -570,7 +571,7 @@ $(document).ready(function () {
 			"symbol": "Se",
 			"name": "Selênio",
 			"distr": [2, 8, 18, 6],
-			"ec": "[Ar] 3d¹⁰ 4s² 4p⁴"
+			"ec": ["[Ar]", "3d¹⁰", "4s²", "4p⁴"]
 		},
 		"35": {
 			"class": "halogenio",
@@ -582,7 +583,7 @@ $(document).ready(function () {
 			"symbol": "Br",
 			"name": "Bromo",
 			"distr": [2, 8, 18, 7],
-			"ec": "[Ar] 3d¹⁰ 4s² 4p⁵"
+			"ec": ["[Ar]", "3d¹⁰", "4s²", "4p⁵"]
 		},
 		"36": {
 			"class": "gas-nobre",
@@ -594,7 +595,7 @@ $(document).ready(function () {
 			"symbol": "Kr",
 			"name": "Criptônio",
 			"distr": [2, 8, 18, 8],
-			"ec": "[Ar] 3d¹⁰ 4s² 4p⁶"
+			"ec": ["[Ar]", "3d¹⁰", "4s²", "4p⁶"]
 		},
 		"37": {
 			"class": "alcalino",
@@ -606,7 +607,7 @@ $(document).ready(function () {
 			"symbol": "Rb",
 			"name": "Rubídio",
 			"distr": [2, 8, 18, 8, 1],
-			"ec": "[Kr] 5s¹"
+			"ec": ["[Kr]", "5s¹"]
 		},
 		"38": {
 			"class": "alcalino-terroso",
@@ -618,7 +619,7 @@ $(document).ready(function () {
 			"symbol": "Sr",
 			"name": "Estrôncio",
 			"distr": [2, 8, 18, 8, 2],
-			"ec": "[Kr] 5s²"
+			"ec": ["[Kr]", "5s²"]
 		},
 		"39": {
 			"class": "metal-transicao",
@@ -630,7 +631,7 @@ $(document).ready(function () {
 			"symbol": "Y",
 			"name": "Ítrio",
 			"distr": [2, 8, 18, 9, 2],
-			"ec": "[Kr] 4d¹ 5s²"
+			"ec": ["[Kr]", "4d¹", "5s²"]
 		},
 		"40": {
 			"class": "metal-transicao",
@@ -642,7 +643,7 @@ $(document).ready(function () {
 			"symbol": "Zr",
 			"name": "Zircônio",
 			"distr": [2, 8, 18, 10, 2],
-			"ec": "[Kr] 4d² 5s²"
+			"ec": ["[Kr]", "4d²", "5s²"]
 		},
 		"41": {
 			"class": "metal-transicao",
@@ -654,7 +655,7 @@ $(document).ready(function () {
 			"symbol": "Nb",
 			"name": "Nióbio",
 			"distr": [2, 8, 18, 12, 1],
-			"ec": "[Kr] 4d³ 5s²"
+			"ec": ["[Kr]", "4d³", "5s²"]
 		},
 		"42": {
 			"class": "metal-transicao",
@@ -666,7 +667,7 @@ $(document).ready(function () {
 			"symbol": "Mo",
 			"name": "Molibdênio",
 			"distr": [2, 8, 18, 13, 1],
-			"ec": "[Kr] 4d⁴ 5s²"
+			"ec": ["[Kr]", "4d⁴", "5s²"]
 		},
 		"43": {
 			"class": "metal-transicao",
@@ -678,7 +679,7 @@ $(document).ready(function () {
 			"symbol": "Tc",
 			"name": "Tecnécio",
 			"distr": [2, 8, 18, 13, 2],
-			"ec": "[Kr] 4d⁵ 5s²"
+			"ec": ["[Kr]", "4d⁵", "5s²"]
 		},
 		"44": {
 			"class": "metal-transicao",
@@ -690,7 +691,7 @@ $(document).ready(function () {
 			"symbol": "Ru",
 			"name": "Rutênio",
 			"distr": [2, 8, 18, 15, 1],
-			"ec": "[Kr] 4d⁶ 5s²"
+			"ec": ["[Kr]", "4d⁶", "5s²"]
 		},
 		"45": {
 			"class": "metal-transicao",
@@ -702,7 +703,7 @@ $(document).ready(function () {
 			"symbol": "Rh",
 			"name": "Ródio",
 			"distr": [2, 8, 18, 16, 1],
-			"ec": "[Kr] 4d⁷ 5s²"
+			"ec": ["[Kr]", "4d⁷", "5s²"]
 		},
 		"46": {
 			"class": "metal-transicao",
@@ -714,7 +715,7 @@ $(document).ready(function () {
 			"symbol": "Pd",
 			"name": "Paládio",
 			"distr": [2, 8, 18, 18],
-			"ec": "[Kr] 4d⁸ 5s²"
+			"ec": ["[Kr]", "4d⁸", "5s²"]
 		},
 		"47": {
 			"class": "metal-transicao",
@@ -726,7 +727,7 @@ $(document).ready(function () {
 			"symbol": "Ag",
 			"name": "Prata",
 			"distr": [2, 8, 18, 18, 1],
-			"ec": "[Kr] 4d¹⁰ 5s¹"
+			"ec": ["[Kr]", "4d¹⁰", "5s¹"]
 		},
 		"48": {
 			"class": "metal-transicao",
@@ -738,7 +739,7 @@ $(document).ready(function () {
 			"symbol": "Cd",
 			"name": "Cádmio",
 			"distr": [2, 8, 18, 18, 2],
-			"ec": "[Kr] 4d¹⁰ 5s²"
+			"ec": ["[Kr]", "4d¹⁰", "5s²"]
 		},
 		"49": {
 			"class": "metal-representativo",
@@ -750,7 +751,7 @@ $(document).ready(function () {
 			"symbol": "In",
 			"name": "Índio",
 			"distr": [2, 8, 18, 18, 3],
-			"ec": "[Kr] 4d¹⁰ 5s² 5p¹"
+			"ec": ["[Kr]", "4d¹⁰", "5s²", "5p¹"]
 		},
 		"50": {
 			"class": "metal-representativo",
@@ -762,7 +763,7 @@ $(document).ready(function () {
 			"symbol": "Sn",
 			"name": "Estanho",
 			"distr": [2, 8, 18, 18, 4],
-			"ec": "[Kr] 4d¹⁰ 5s² 5p²"
+			"ec": ["[Kr]", "4d¹⁰", "5s²", "5p²"]
 		},
 		"51": {
 			"class": "semi-metal",
@@ -774,7 +775,7 @@ $(document).ready(function () {
 			"symbol": "Sb",
 			"name": "Antimônio",
 			"distr": [2, 8, 18, 18, 5],
-			"ec": "[Kr] 4d¹⁰ 5s² 5p³"
+			"ec": ["[Kr]", "4d¹⁰", "5s²", "5p³"]
 		},
 		"52": {
 			"class": "semi-metal",
@@ -786,7 +787,7 @@ $(document).ready(function () {
 			"symbol": "Te",
 			"name": "Telúrio",
 			"distr": [2, 8, 18, 18, 6],
-			"ec": "[Kr] 4d¹⁰ 5s² 5p⁴"
+			"ec": ["[Kr]", "4d¹⁰", "5s²", "5p⁴"]
 		},
 		"53": {
 			"class": "halogenio",
@@ -798,7 +799,7 @@ $(document).ready(function () {
 			"symbol": "I",
 			"name": "Iodo",
 			"distr": [2, 8, 18, 18, 7],
-			"ec": "[Kr] 4d¹⁰ 5s² 5p⁵"
+			"ec": ["[Kr]", "4d¹⁰", "5s²", "5p⁵"]
 		},
 		"54": {
 			"class": "gas-nobre",
@@ -810,7 +811,7 @@ $(document).ready(function () {
 			"symbol": "Xe",
 			"name": "Xenônio",
 			"distr": [2, 8, 18, 18, 8],
-			"ec": "[Kr] 4d¹⁰ 5s² 5p⁶"
+			"ec": ["[Kr]", "4d¹⁰", "5s²", "5p⁶"]
 		},
 		"55": {
 			"class": "alcalino",
@@ -822,7 +823,7 @@ $(document).ready(function () {
 			"symbol": "Cs",
 			"name": "Césio",
 			"distr": [2, 8, 18, 18, 8, 1],
-			"ec": "[Xe] 6s¹"
+			"ec": ["[Xe]", "6s¹"]
 		},
 		"56": {
 			"class": "alcalino-terroso",
@@ -834,7 +835,7 @@ $(document).ready(function () {
 			"symbol": "Ba",
 			"name": "Bário",
 			"distr": [2, 8, 18, 18, 8, 2],
-			"ec": "[Xe] 6s²"
+			"ec": ["[Xe]", "6s²"]
 		},
 		"57-71": {
 			"class": "lantanideo",
@@ -843,10 +844,10 @@ $(document).ready(function () {
 			"period": 6,
 			"link": "https://www.tabelaperiodicacompleta.com/lantanideos",
 			"mass": "",
-			"symbol": "",
-			"name": "",
+			"symbol": "La-Lu",
+			"name": "Lantanídeos",
 			"distr": [],
-			"ec": ""
+			"ec": []
 		},
 		"57": {
 			"class": "lantanideo",
@@ -858,7 +859,7 @@ $(document).ready(function () {
 			"symbol": "La",
 			"name": "Lantânio",
 			"distr": [2, 8, 18, 18, 9, 2],
-			"ec": "[Xe] 4f¹ 6s²"
+			"ec": ["[Xe]", "4f¹", "6s²"]
 		},
 		"58": {
 			"class": "lantanideo",
@@ -870,7 +871,7 @@ $(document).ready(function () {
 			"symbol": "Ce",
 			"name": "Cério",
 			"distr": [2, 8, 18, 19, 9, 2],
-			"ec": "[Xe] 4f² 6s²"
+			"ec": ["[Xe]", "4f²", "6s²"]
 		},
 		"59": {
 			"class": "lantanideo",
@@ -882,7 +883,7 @@ $(document).ready(function () {
 			"symbol": "Pr",
 			"name": "Praseodímio",
 			"distr": [2, 8, 18, 21, 8, 2],
-			"ec": "[Xe] 4f³ 6s²"
+			"ec": ["[Xe]", "4f³", "6s²"]
 		},
 		"60": {
 			"class": "lantanideo",
@@ -894,7 +895,7 @@ $(document).ready(function () {
 			"symbol": "Nd",
 			"name": "Neodímio",
 			"distr": [2, 8, 18, 22, 8, 2],
-			"ec": "[Xe] 4f⁴ 6s²"
+			"ec": ["[Xe]", "4f⁴", "6s²"]
 		},
 		"61": {
 			"class": "lantanideo",
@@ -906,7 +907,7 @@ $(document).ready(function () {
 			"symbol": "Pm",
 			"name": "Promécio",
 			"distr": [2, 8, 18, 23, 8, 2],
-			"ec": "[Xe] 4f⁵ 6s²"
+			"ec": ["[Xe]", "4f⁵", "6s²"]
 		},
 		"62": {
 			"class": "lantanideo",
@@ -918,7 +919,7 @@ $(document).ready(function () {
 			"symbol": "Sm",
 			"name": "Samário",
 			"distr": [2, 8, 18, 24, 8, 2],
-			"ec": "[Xe] 4f⁶ 6s²"
+			"ec": ["[Xe]", "4f⁶", "6s²"]
 		},
 		"63": {
 			"class": "lantanideo",
@@ -930,7 +931,7 @@ $(document).ready(function () {
 			"symbol": "Eu",
 			"name": "Európio",
 			"distr": [2, 8, 18, 25, 8, 2],
-			"ec": "[Xe] 4f⁷ 6s²"
+			"ec": ["[Xe]", "4f⁷", "6s²"]
 		},
 		"64": {
 			"class": "lantanideo",
@@ -942,7 +943,7 @@ $(document).ready(function () {
 			"symbol": "Gd",
 			"name": "Gadolínio",
 			"distr": [2, 8, 18, 25, 9, 2],
-			"ec": "[Xe] 4f⁸ 6s²"
+			"ec": ["[Xe]", "4f⁸", "6s²"]
 		},
 		"65": {
 			"class": "lantanideo",
@@ -954,7 +955,7 @@ $(document).ready(function () {
 			"symbol": "Tb",
 			"name": "Térbio",
 			"distr": [2, 8, 18, 27, 8, 2],
-			"ec": "[Xe] 4f⁹ 6s²"
+			"ec": ["[Xe]", "4f⁹", "6s²"]
 		},
 		"66": {
 			"class": "lantanideo",
@@ -966,7 +967,7 @@ $(document).ready(function () {
 			"symbol": "Dy",
 			"name": "Disprósio",
 			"distr": [2, 8, 18, 28, 8, 2],
-			"ec": "[Xe] 4f¹⁰ 6s²"
+			"ec": ["[Xe]", "4f¹⁰", "6s²"]
 		},
 		"67": {
 			"class": "lantanideo",
@@ -978,7 +979,7 @@ $(document).ready(function () {
 			"symbol": "Ho",
 			"name": "Hólmio",
 			"distr": [2, 8, 18, 29, 8, 2],
-			"ec": "[Xe] 4f¹¹ 6s²"
+			"ec": ["[Xe]", "4f¹¹", "6s²"]
 		},
 		"68": {
 			"class": "lantanideo",
@@ -990,7 +991,7 @@ $(document).ready(function () {
 			"symbol": "Er",
 			"name": "Érbio",
 			"distr": [2, 8, 18, 30, 8, 2],
-			"ec": "[Xe] 4f¹² 6s²"
+			"ec": ["[Xe]", "4f¹²", "6s²"]
 		},
 		"69": {
 			"class": "lantanideo",
@@ -1002,7 +1003,7 @@ $(document).ready(function () {
 			"symbol": "Tm",
 			"name": "Túlio",
 			"distr": [2, 8, 18, 31, 8, 2],
-			"ec": "[Xe] 4f¹³ 6s²"
+			"ec": ["[Xe]", "4f¹³", "6s²"]
 		},
 		"70": {
 			"class": "lantanideo",
@@ -1014,7 +1015,7 @@ $(document).ready(function () {
 			"symbol": "Yb",
 			"name": "Itérbio",
 			"distr": [2, 8, 18, 32, 8, 2],
-			"ec": "[Xe] 4f¹⁴ 6s²"
+			"ec": ["[Xe]", "4f¹⁴", "6s²"]
 		},
 		"71": {
 			"class": "lantanideo",
@@ -1026,7 +1027,7 @@ $(document).ready(function () {
 			"symbol": "Lu",
 			"name": "Lutécio",
 			"distr": [2, 8, 18, 32, 9, 2],
-			"ec": "[Xe] 4f¹⁴ 5d¹ 6s²"
+			"ec": ["[Xe]", "4f¹⁴", "5d¹", "6s²"]
 		},
 		"72": {
 			"class": "metal-transicao",
@@ -1038,7 +1039,7 @@ $(document).ready(function () {
 			"symbol": "Hf",
 			"name": "Háfnio",
 			"distr": [2, 8, 18, 32, 10, 2],
-			"ec": "[Xe] 4f¹⁴ 5d² 6s²"
+			"ec": ["[Xe]", "4f¹⁴", "5d²", "6s²"]
 		},
 		"73": {
 			"class": "metal-transicao",
@@ -1050,7 +1051,7 @@ $(document).ready(function () {
 			"symbol": "Ta",
 			"name": "Tântalo",
 			"distr": [2, 8, 18, 32, 11, 2],
-			"ec": "[Xe] 4f¹⁴ 5d³ 6s²"
+			"ec": ["[Xe]", "4f¹⁴", "5d³", "6s²"]
 		},
 		"74": {
 			"class": "metal-transicao",
@@ -1062,7 +1063,7 @@ $(document).ready(function () {
 			"symbol": "W",
 			"name": "Tungstênio",
 			"distr": [2, 8, 18, 32, 12, 2],
-			"ec": "[Xe] 4f¹⁴ 5d⁴ 6s²"
+			"ec": ["[Xe]", "4f¹⁴", "5d⁴", "6s²"]
 		},
 		"75": {
 			"class": "metal-transicao",
@@ -1074,7 +1075,7 @@ $(document).ready(function () {
 			"symbol": "Re",
 			"name": "Rênio",
 			"distr": [2, 8, 18, 32, 13, 2],
-			"ec": "[Xe] 4f¹⁴ 5d⁵ 6s²"
+			"ec": ["[Xe]", "4f¹⁴", "5d⁵", "6s²"]
 		},
 		"76": {
 			"class": "metal-transicao",
@@ -1086,7 +1087,7 @@ $(document).ready(function () {
 			"symbol": "Os",
 			"name": "Ósmio",
 			"distr": [2, 8, 18, 32, 14, 2],
-			"ec": "[Xe] 4f¹⁴ 5d⁶ 6s²"
+			"ec": ["[Xe]", "4f¹⁴", "5d⁶", "6s²"]
 		},
 		"77": {
 			"class": "metal-transicao",
@@ -1098,7 +1099,7 @@ $(document).ready(function () {
 			"symbol": "Ir",
 			"name": "Irídio",
 			"distr": [2, 8, 18, 32, 15, 2],
-			"ec": "[Xe] 4f¹⁴ 5d⁷ 6s²"
+			"ec": ["[Xe]", "4f¹⁴", "5d⁷", "6s²"]
 		},
 		"78": {
 			"class": "metal-transicao",
@@ -1110,7 +1111,7 @@ $(document).ready(function () {
 			"symbol": "Pt",
 			"name": "Platina",
 			"distr": [2, 8, 18, 32, 17, 1],
-			"ec": "[Xe] 4f¹⁴ 5d⁸ 6s²"
+			"ec": ["[Xe]", "4f¹⁴", "5d⁸", "6s²"]
 		},
 		"79": {
 			"class": "metal-transicao",
@@ -1122,7 +1123,7 @@ $(document).ready(function () {
 			"symbol": "Au",
 			"name": "Ouro",
 			"distr": [2, 8, 18, 32, 18, 1],
-			"ec": "[Xe] 4f¹⁴ 5d¹⁰ 6s¹"
+			"ec": ["[Xe]", "4f¹⁴", "5d¹⁰", "6s¹"]
 		},
 		"80": {
 			"class": "metal-transicao",
@@ -1134,7 +1135,7 @@ $(document).ready(function () {
 			"symbol": "Hg",
 			"name": "Mercúrio",
 			"distr": [2, 8, 18, 32, 18, 2],
-			"ec": "[Xe] 4f¹⁴ 5d¹⁰ 6s²"
+			"ec": ["[Xe]", "4f¹⁴", "5d¹⁰", "6s²"]
 		},
 		"81": {
 			"class": "metal-representativo",
@@ -1146,7 +1147,7 @@ $(document).ready(function () {
 			"symbol": "Tl",
 			"name": "Tálio",
 			"distr": [2, 8, 18, 32, 18, 3],
-			"ec": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p¹"
+			"ec": ["[Xe]", "4f¹⁴", "5d¹⁰", "6s²", "6p¹"]
 		},
 		"82": {
 			"class": "metal-representativo",
@@ -1158,7 +1159,7 @@ $(document).ready(function () {
 			"symbol": "Pb",
 			"name": "Chumbo",
 			"distr": [2, 8, 18, 32, 18, 4],
-			"ec": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p²"
+			"ec": ["[Xe]", "4f¹⁴", "5d¹⁰", "6s²", "6p²"]
 		},
 		"83": {
 			"class": "metal-representativo",
@@ -1170,7 +1171,7 @@ $(document).ready(function () {
 			"symbol": "Bi",
 			"name": "Bismuto",
 			"distr": [2, 8, 18, 32, 18, 5],
-			"ec": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p³"
+			"ec": ["[Xe]", "4f¹⁴", "5d¹⁰", "6s²", "6p³"]
 		},
 		"84": {
 			"class": "semi-metal",
@@ -1182,7 +1183,7 @@ $(document).ready(function () {
 			"symbol": "Po",
 			"name": "Polônio",
 			"distr": [2, 8, 18, 32, 18, 6],
-			"ec": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁴"
+			"ec": ["[Xe]", "4f¹⁴", "5d¹⁰", "6s²", "6p⁴"]
 		},
 		"85": {
 			"class": "halogenio",
@@ -1194,7 +1195,7 @@ $(document).ready(function () {
 			"symbol": "At",
 			"name": "Ástato",
 			"distr": [2, 8, 18, 32, 18, 7],
-			"ec": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁵"
+			"ec": ["[Xe]", "4f¹⁴", "5d¹⁰", "6s²", "6p⁵"]
 		},
 		"86": {
 			"class": "gas-nobre",
@@ -1206,7 +1207,7 @@ $(document).ready(function () {
 			"symbol": "Rn",
 			"name": "Radônio",
 			"distr": [2, 8, 18, 32, 18, 8],
-			"ec": "[Xe] 4f¹⁴ 5d¹⁰ 6s² 6p⁶"
+			"ec": ["[Xe]", "4f¹⁴", "5d¹⁰", "6s²", "6p⁶"]
 		},
 		"87": {
 			"class": "alcalino",
@@ -1218,7 +1219,7 @@ $(document).ready(function () {
 			"symbol": "Fr",
 			"name": "Frâncio",
 			"distr": [2, 8, 18, 32, 18, 8, 1],
-			"ec": "[Rn] 7s¹"
+			"ec": ["[Rn]", "7s¹"]
 		},
 		"88": {
 			"class": "alcalino-terroso",
@@ -1230,7 +1231,7 @@ $(document).ready(function () {
 			"symbol": "Ra",
 			"name": "Rádio",
 			"distr": [2, 8, 18, 32, 18, 8, 2],
-			"ec": "[Rn] 7s²"
+			"ec": ["[Rn]", "7s²"]
 		},
 		"89-103": {
 			"class": "actinideo",
@@ -1239,10 +1240,10 @@ $(document).ready(function () {
 			"period": 7,
 			"link": "https://www.tabelaperiodicacompleta.com/actinideos",
 			"mass": "",
-			"symbol": "",
-			"name": "",
+			"symbol": "AC-Lr",
+			"name": "Actinídeo",
 			"distr": [],
-			"ec": ""
+			"ec": []
 		},
 		"89": {
 			"class": "actinideo",
@@ -1254,7 +1255,7 @@ $(document).ready(function () {
 			"symbol": "Ac",
 			"name": "Actínio",
 			"distr": [2, 8, 18, 32, 18, 9, 2],
-			"ec": "[Rn] 5f¹ 7s²"
+			"ec": ["[Rn]", "5f¹", "7s²"]
 		},
 		"90": {
 			"class": "actinideo",
@@ -1266,7 +1267,7 @@ $(document).ready(function () {
 			"symbol": "Th",
 			"name": "Tório",
 			"distr": [2, 8, 18, 32, 18, 10, 2],
-			"ec": "[Rn] 5f² 7s²"
+			"ec": ["[Rn]", "5f²", "7s²"]
 		},
 		"91": {
 			"class": "actinideo",
@@ -1278,7 +1279,7 @@ $(document).ready(function () {
 			"symbol": "Pa",
 			"name": "Protactínio",
 			"distr": [2, 8, 18, 32, 20, 9, 2],
-			"ec": "[Rn] 5f³ 7s²"
+			"ec": ["[Rn]", "5f³", "7s²"]
 		},
 		"92": {
 			"class": "actinideo",
@@ -1290,7 +1291,7 @@ $(document).ready(function () {
 			"symbol": "U",
 			"name": "Urânio",
 			"distr": [2, 8, 18, 32, 21, 9, 2],
-			"ec": "[Rn] 5f⁴ 7s²"
+			"ec": ["[Rn]", "5f⁴", "7s²"]
 		},
 		"93": {
 			"class": "actinideo",
@@ -1302,7 +1303,7 @@ $(document).ready(function () {
 			"symbol": "Np",
 			"name": "Netúnio",
 			"distr": [2, 8, 18, 32, 22, 9, 2],
-			"ec": "[Rn] 5f⁵ 7s²"
+			"ec": ["[Rn]", "5f⁵", "7s²"]
 		},
 		"94": {
 			"class": "actinideo",
@@ -1314,7 +1315,7 @@ $(document).ready(function () {
 			"symbol": "Pu",
 			"name": "Plutônio",
 			"distr": [2, 8, 18, 32, 24, 8, 2],
-			"ec": "[Rn] 5f⁶ 7s²"
+			"ec": ["[Rn]", "5f⁶", "7s²"]
 		},
 		"95": {
 			"class": "actinideo",
@@ -1326,7 +1327,7 @@ $(document).ready(function () {
 			"symbol": "Am",
 			"name": "Amerício",
 			"distr": [2, 8, 18, 32, 25, 8, 2],
-			"ec": "[Rn] 5f⁷ 7s²"
+			"ec": ["[Rn]", "5f⁷", "7s²"]
 		},
 		"96": {
 			"class": "actinideo",
@@ -1338,7 +1339,7 @@ $(document).ready(function () {
 			"symbol": "Cm",
 			"name": "Cúrio",
 			"distr": [2, 8, 18, 32, 25, 9, 2],
-			"ec": "[Rn] 5f⁸ 7s²"
+			"ec": ["[Rn]", "5f⁸", "7s²"]
 		},
 		"97": {
 			"class": "actinideo",
@@ -1350,7 +1351,7 @@ $(document).ready(function () {
 			"symbol": "Bk",
 			"name": "Berquélio",
 			"distr": [2, 8, 18, 32, 27, 8, 2],
-			"ec": "[Rn] 5f⁹ 7s²"
+			"ec": ["[Rn]", "5f⁹", "7s²"]
 		},
 		"98": {
 			"class": "actinideo",
@@ -1362,7 +1363,7 @@ $(document).ready(function () {
 			"symbol": "Cf",
 			"name": "Califórnio",
 			"distr": [2, 8, 18, 32, 28, 8, 2],
-			"ec": "[Rn] 5f¹⁰ 7s²"
+			"ec": ["[Rn]", "5f¹⁰", "7s²"]
 		},
 		"99": {
 			"class": "actinideo",
@@ -1374,7 +1375,7 @@ $(document).ready(function () {
 			"symbol": "Es",
 			"name": "Einsténio",
 			"distr": [2, 8, 18, 32, 29, 8, 2],
-			"ec": "[Rn] 5f¹¹ 7s²"
+			"ec": ["[Rn]", "5f¹¹", "7s²"]
 		},
 		"100": {
 			"class": "actinideo",
@@ -1386,7 +1387,7 @@ $(document).ready(function () {
 			"symbol": "Fm",
 			"name": "Férmio",
 			"distr": [2, 8, 18, 32, 30, 8, 2],
-			"ec": "[Rn] 5f¹² 7s²"
+			"ec": ["[Rn]", "5f¹²", "7s²"]
 		},
 		"101": {
 			"class": "actinideo",
@@ -1398,7 +1399,7 @@ $(document).ready(function () {
 			"symbol": "Md",
 			"name": "Mendelévio",
 			"distr": [2, 8, 18, 32, 31, 8, 2],
-			"ec": "[Rn] 5f¹³ 7s²"
+			"ec": ["[Rn]", "5f¹³", "7s²"]
 		},
 		"102": {
 			"class": "actinideo",
@@ -1410,7 +1411,7 @@ $(document).ready(function () {
 			"symbol": "No",
 			"name": "Nobélio",
 			"distr": [2, 8, 18, 32, 32, 8, 2],
-			"ec": "[Rn] 5f¹⁴ 7s²"
+			"ec": ["[Rn]", "5f¹⁴", "7s²"]
 		},
 		"103": {
 			"class": "actinideo",
@@ -1422,7 +1423,7 @@ $(document).ready(function () {
 			"symbol": "Lr",
 			"name": "Laurêncio",
 			"distr": [2, 8, 18, 32, 32, 8, 3],
-			"ec": ""
+			"ec": []
 		},
 		"104": {
 			"class": "metal-transicao",
@@ -1434,7 +1435,7 @@ $(document).ready(function () {
 			"symbol": "Rf",
 			"name": "Rutherfórdio",
 			"distr": [2, 8, 18, 32, 32, 10, 2],
-			"ec": ""
+			"ec": []
 		},
 		"105": {
 			"class": "metal-transicao",
@@ -1446,7 +1447,7 @@ $(document).ready(function () {
 			"symbol": "Db",
 			"name": "Dúbnio",
 			"distr": [2, 8, 18, 32, 32, 11, 2],
-			"ec": ""
+			"ec": []
 		},
 		"106": {
 			"class": "metal-transicao",
@@ -1458,7 +1459,7 @@ $(document).ready(function () {
 			"symbol": "Sg",
 			"name": "Seabórgio",
 			"distr": [2, 8, 18, 32, 32, 12, 2],
-			"ec": ""
+			"ec": []
 		},
 		"107": {
 			"class": "metal-transicao",
@@ -1470,7 +1471,7 @@ $(document).ready(function () {
 			"symbol": "Bh",
 			"name": "Bóhrio",
 			"distr": [2, 8, 18, 32, 32, 13, 2],
-			"ec": ""
+			"ec": []
 		},
 		"108": {
 			"class": "metal-transicao",
@@ -1482,7 +1483,7 @@ $(document).ready(function () {
 			"symbol": "Hs",
 			"name": "Hássio",
 			"distr": [2, 8, 18, 32, 32, 14, 2],
-			"ec": ""
+			"ec": []
 		},
 		"109": {
 			"class": "metal-transicao",
@@ -1494,7 +1495,7 @@ $(document).ready(function () {
 			"symbol": "Mt",
 			"name": "Meitnério",
 			"distr": [2, 8, 18, 32, 32, 15, 2],
-			"ec": ""
+			"ec": []
 		},
 		"110": {
 			"class": "metal-transicao",
@@ -1506,7 +1507,7 @@ $(document).ready(function () {
 			"symbol": "Ds",
 			"name": "Darmstádio",
 			"distr": [2, 8, 18, 32, 32, 17, 1],
-			"ec": ""
+			"ec": []
 		},
 		"111": {
 			"class": "metal-transicao",
@@ -1518,7 +1519,7 @@ $(document).ready(function () {
 			"symbol": "Rg",
 			"name": "Roentgênio",
 			"distr": [2, 8, 18, 32, 32, 18, 1],
-			"ec": ""
+			"ec": []
 		},
 		"112": {
 			"class": "metal-transicao",
@@ -1530,7 +1531,7 @@ $(document).ready(function () {
 			"symbol": "Cn",
 			"name": "Copernício",
 			"distr": [2, 8, 18, 32, 32, 18, 2],
-			"ec": ""
+			"ec": []
 		},
 		"113": {
 			"class": "metal-representativo",
@@ -1542,7 +1543,7 @@ $(document).ready(function () {
 			"symbol": "Nh",
 			"name": "Nihônio",
 			"distr": [2, 8, 18, 32, 32, 18, 3],
-			"ec": ""
+			"ec": []
 		},
 		"114": {
 			"class": "metal-representativo",
@@ -1554,7 +1555,7 @@ $(document).ready(function () {
 			"symbol": "Fl",
 			"name": "Fleróvio",
 			"distr": [2, 8, 18, 32, 32, 18, 4],
-			"ec": ""
+			"ec": []
 		},
 		"115": {
 			"class": "metal-representativo",
@@ -1566,7 +1567,7 @@ $(document).ready(function () {
 			"symbol": "Mc",
 			"name": "Moscóvio",
 			"distr": [2, 8, 18, 32, 32, 18, 5],
-			"ec": ""
+			"ec": []
 		},
 		"116": {
 			"class": "metal-representativo",
@@ -1578,7 +1579,7 @@ $(document).ready(function () {
 			"symbol": "Lv",
 			"name": "Livermório",
 			"distr": [2, 8, 18, 32, 32, 18, 6],
-			"ec": ""
+			"ec": []
 		},
 		"117": {
 			"class": "halogenio",
@@ -1590,7 +1591,7 @@ $(document).ready(function () {
 			"symbol": "Ts",
 			"name": "Tenessino",
 			"distr": [2, 8, 18, 32, 32, 18, 7],
-			"ec": ""
+			"ec": []
 		},
 		"118": {
 			"class": "gas-nobre",
@@ -1602,26 +1603,36 @@ $(document).ready(function () {
 			"symbol": "Og",
 			"name": "Oganessônio",
 			"distr": [2, 8, 18, 32, 32, 18, 8],
-			"ec": ""
+			"ec": []
 		}
 	};
 
-	var $group = $('.grupo');
-	var $family = $('.familia');
-	var $period = $('.periodo');
-	var $element = $('.elemento');
+	var $group = $('.group');
+	var $family = $('.family');
+	var $period = $('.period');
+	var $element = $('.element');
+	var $klmnopq = $('.klmnopq-descr');
 
 	function grpTitle(idx) {
-		return groups[idx].title == undefined ? cl[groups[idx].cl] : groups[idx].title;
+		return groups[idx].title == undefined ? cl[groups[idx].cl].title : groups[idx].title;
 	}
 	function mountCell(o) {
-		var html = '<big>';
-		html += '<strong>' + o.an + '</strong>';
+		var html = '';
+		html += '<div>';
+		html += '<div class="an">' + o.an + '</div>';
+		html += '<div class="symbol">' + o.symbol + '</div>';
+		html += '<div class="name">' + o.name + '</div>';
+		html += '<div class="mass">' + o.mass + '</div>';
+		html += '<div class="ec">' + o.ec.join(' ') + '</div>';
+		/*
 		html += '<abbr>' + o.symbol + '</abbr>';
 		html += '<em>' + o.name + '</em>';
 		html += '<i>' + o.mass + '</i>';
 		html += '</big>';
 		html += '<small>' + (o.distr.join('<br>')) + '</small>';
+		*/
+		html += '</div>';
+		html += '<div class="klmnopq">' + o.distr.join('<br>') + '</div>';
 		return html;
 	}
 	function elementTitle(o) {
@@ -1631,28 +1642,91 @@ $(document).ready(function () {
 		if (o.name) out.push("Name: " + o.name);
 		if (o.mass) out.push("Mass: " + o.mass);
 		if (o.distr.length) out.push("Distr: " + o.distr.join(','));
-		if (o.ec) out.push("EC: " + o.ec);
+		if (o.ec.length) out.push("EC: " + o.ec.join(' '));
 		return out.join("\n");
 	}
-	function buildSubtitle() {
-		var out = '<div class="row">';
-		var c = 'col-md-4';
-		for (var i in cl) {
-			out += '<div class="' + c + '">';
-			out += '<a class="tick ' + i + '" href="' + cl[i].link + '" target="_blank"></a>';
-			out += '<a class="descr"      href="' + cl[i].link + '" target="_blank">' + cl[i].title + '</a>';
-			out += '</div>';
-		}
-		for (var i in prop) {
-			out += '<div class="' + c + '">';
-			out += '<a class="tick prop ' + i + '" href="' + prop[i].link + '">' + prop[i].subtitle + '</a>';
-			out += '<a class="descr"      href="' + prop[i].link + '">' + prop[i].title + '</a>';
-			out += '</div>';
-		}
+	function buildInfo() {
+		var out = '';
+		out += '<div class="details">'
+		out += '<table>';
+		out += '<tr><th>Símbolo:</th><td id="symbol"></td><th>Nome:</th><td id="name"></td></tr>';
+		out += '<tr><th>Nº Atômico:</th><td id="an"></td><th>Estado:</th><td id="state"></td></tr>';
+		out += '<tr><th>Massa Atômica:</th><td id="mass"></td><th>Classe</th><td id="cl"></td></tr>'
+		out += '<tr><th>Grupo:</th><td id="group"></td><th>Grp Name:</th><td id="grpName"></td></tr>';
+		out += '<tr><th>Família:</th><td id="family"></td><th>Distr KLM.:</th><td id="klm"></td></tr>';
+		out += '<tr><th>Período:</th><td id="period"></td><th>Distr Geo:</th><td id="ec"></td></tr>';
+		out += '</table>';
 		out += '</div>';
 
-		$('#legenda').html(out);
+		out += '<div class="subtitle">';
+		var a = [];
+		for (var i in cl) a.push(
+			'<td>' +
+			'<a class="tick ' + i + '" href="' + cl[i].link + '" target="_blank"></a>' +
+			'<a class="descr"      href="' + cl[i].link + '" target="_blank">' + cl[i].title + '</a>' +
+			'</td>'
+		);
+		for (var i in prop) a.push(
+			'<td>' +
+			'<a class="tick prop ' + i + '" href="' + prop[i].link + '">' + prop[i].subtitle + '</a>' +
+			'<a class="descr"      href="' + prop[i].link + '">' + prop[i].title + '</a>' +
+			'</td>'
+		)
+		var i, j, t, chunk = 3;
+		out += '<table>';
+		for (i = 0, j = a.length; i < j; i += chunk) {
+			t = a.slice(i, i + chunk);
+			out += '<tr>' + t.join('') + '</tr>';
+		}
+		out += '</table>';
+		out += '</div>';
+
+		$('.info').html(out);
 	}
+	function example() {
+		$e = $('.example');
+		//$e.addClass('element');
+		$e.html(mountCell({
+			"an": "Nº Atômico",
+			"symbol": "Símbolo",
+			"name": "Nome",
+			"mass": "Massa Atômica",
+			"distr": klmnopq,
+			"ec": ["Distrib"],
+		}));
+	}
+	buildInfo();
+	example();
+	var $details = $('.details');
+	$details.hide();
+	var $detaildItens = {
+		"an": $('#an'),
+		"mass": $('#mass'),
+		"symbol": $('#symbol'),
+		"name": $('#name'),
+		"group": $('#group'),
+		"period": $('#period'),
+		"family": $('#family'),
+		"cl": $('#cl'),
+		"grpName": $('#grpName'),
+		"stateTitle": $('#state'),
+		"distr": $('#klm'),
+		"ec": $('#ec')
+	};
+	/*
+		"1": {
+			"class": "nao-metal",
+			"state": "gasoso",
+			"group": 1,
+			"period": 1,
+			"link": "https://www.tabelaperiodicacompleta.com/elemento-quimico/hidrogenio",
+			"mass": "1,00794",
+			"symbol": "H",
+			"name": "Hidrogênio",
+			"distr": [1],
+			"ec": ["1s¹"]
+		},
+		*/
 
 	$group.each(function (idx) {
 		var $this = $(this);
@@ -1663,7 +1737,7 @@ $(document).ready(function () {
 	$family.each(function () {
 		var $this = $(this);
 		var idx = $this.attr('group') - 1;
-		$this.html(groups[idx].family);
+		$this.html('<div>' + groups[idx].family + '</div>');
 		$this.attr('idx', idx);
 		$this.attr('title', grpTitle(idx));
 	});
@@ -1671,18 +1745,33 @@ $(document).ready(function () {
 		var $this = $(this);
 		$this.html(idx + 1);
 	});
+	$klmnopq.each(function (idx) {
+		if (idx > 6) idx -= 2;
+		var out = [];
+		for (var i = 0; i <= idx; i++) out.push(klmnopq[i]);
+		$(this).html(out.join('<br>'));
+	});
 	$element.each(function (idx) {
 		var $this = $(this);
 		var an = $this.attr('an');
 		var o = element[an];
 		o.an = an;
 		o.idxGrp = o.group - 1;
+		o.family = groups[o.idxGrp].family;
+		o.cl = cl[o.class].title;;
+		o.grpName = grpTitle(o.idxGrp);
+		o.stateTitle = o.state ? prop[o.state].title : '';
+		o.objGroup = $($group[o.idxGrp]);
+		o.objFamily = $('.family[idx="' + o.idxGrp + '"] div');
+		o.objPeriod = $($period[o.period - 1]);
+
 		$this.addClass(o.class);
 		$this.addClass(o.state);
+		if (an == '57-71' || an == '89-103') $this.addClass('compact');
 		$this.attr('title', elementTitle(o));
 		$this.html(mountCell(o));
 	});
-	buildSubtitle();
+
 
 	$group.click(function () {
 		var idx = $(this).prop('idx');
@@ -1700,20 +1789,30 @@ $(document).ready(function () {
 		var an = $this.attr('an');
 		window.open(element[an].link, 'blank');
 	});
+	$element.mouseover(function () {
+		var $this = $(this);
+		var an = $this.attr('an');
+		var o = element[an];
+		$details.addClass(o.class);
+		for (var i in $detaildItens) {
+			//console.log([i , typeof o[i]]);
 
-	/*
-		<td class="elemento metal-transicao grupo-8 solido" href="https://www.tabelaperiodicacompleta.com/elemento-quimico/ferro" title="Ferro">
-			<big>
-				<strong class="numero-atomico" an="26">26</strong>
-				<abbr>Fe</abbr>
-				<em>Ferro</em>
-				<i>55,845</i>
-			</big>
-			<small>2<br>
-				8<br>
-				14<br>
-				2</small>
-		</td>
-	*/
+			$detaildItens[i].html(typeof o[i] == 'object' ? o[i].join(', ') : o[i]);
+		}
+		$details.show();
+		o.objGroup.addClass('active');
+		o.objFamily.addClass('active');
+		o.objPeriod.addClass('active');
+	});
+	$element.mouseout(function () {
+		var $this = $(this);
+		var an = $this.attr('an');
+		var o = element[an];
+		$details.removeClass(o.class);
+		$details.hide();
+		o.objGroup.removeClass('active');
+		o.objFamily.removeClass('active');
+		o.objPeriod.removeClass('active');
+	});
 	//console.log(idx);
 });
