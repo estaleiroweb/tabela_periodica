@@ -1,6 +1,8 @@
 {
     "name": "estaleiroweb/tabela_periodica",
     "type": "project",
+    "version": "1.0.0",
+    "license": "MIT"
     "authors": [
         {
             "name": "estaleiroweb",
